@@ -1,388 +1,607 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kazuki Kamihoriuchi | New Business Development &amp; Technical Leadership</title>
-<meta content="Portfolio of Kazuki Kamihoriuchi, specializing in transforming vision into scalable ventures through strategy and engineering excellence." name="description"/>
-<!-- Fonts & Icons -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind & Config -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-background": "#111c2d",
-              "secondary": "#0049de",
-              "on-secondary-fixed": "#001550",
-              "on-primary-container": "#7c8498",
-              "tertiary": "#000000",
-              "on-primary-fixed-variant": "#3f4759",
-              "tertiary-fixed": "#95f7b9",
-              "primary-fixed-dim": "#bfc6dc",
-              "surface-bright": "#f9f9ff",
-              "surface-container": "#e8eeff",
-              "surface-container-low": "#f0f3ff",
-              "surface-container-highest": "#d9e3fb",
-              "on-primary": "#ffffff",
-              "inverse-on-surface": "#ecf0ff",
-              "surface-dim": "#d0daf2",
-              "secondary-fixed-dim": "#b6c4ff",
-              "on-error-container": "#93000a",
-              "primary": "#000000",
-              "on-surface-variant": "#45474c",
-              "error-container": "#ffdad6",
-              "secondary-container": "#2e64fe",
-              "tertiary-container": "#002110",
-              "primary-fixed": "#dbe2f9",
-              "on-tertiary-fixed-variant": "#00522f",
-              "surface-container-high": "#dfe8ff",
-              "surface": "#f9f9ff",
-              "on-tertiary": "#ffffff",
-              "error": "#ba1a1a",
-              "background": "#f9f9ff",
-              "surface-variant": "#d9e3fb",
-              "on-secondary-container": "#f9f7ff",
-              "surface-tint": "#565e71",
-              "surface-container-lowest": "#ffffff",
-              "on-surface": "#111c2d",
-              "inverse-primary": "#bfc6dc",
-              "on-error": "#ffffff",
-              "on-tertiary-container": "#319560",
-              "tertiary-fixed-dim": "#79da9e",
-              "secondary-fixed": "#dce1ff",
-              "primary-container": "#141b2c",
-              "outline": "#76777d",
-              "on-secondary": "#ffffff",
-              "on-tertiary-fixed": "#002110",
-              "on-secondary-fixed-variant": "#003ab3",
-              "inverse-surface": "#273143",
-              "on-primary-fixed": "#141b2c",
-              "outline-variant": "#c6c6cd"
-            },
-            fontFamily: {
-              "headline": ["Space Grotesk"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-          },
+<html lang="ja" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上堀内 一輝 | TSUNAGU — New Business Architect</title>
+<meta name="description" content="通信会社から構造変化を起こす。Solanaバリデータ、SCSセキュリティ評価、Web3インフラ — 評価→実行→再評価の一気通貫で新規事業を設計する。">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        midnight: "#020617",
+        deep: "#0f172a",
+        slate: "#1e293b",
+        steel: "#334155",
+        mist: "#94a3b8",
+        cloud: "#cbd5e1",
+        ice: "#e2e8f0",
+        accent: "#22d3ee",
+        "accent-dim": "#0891b2",
+        emerald: "#34d399",
+        violet: "#a78bfa",
+      },
+      fontFamily: {
+        display: ["JetBrains Mono", "monospace"],
+        heading: ["Inter", "sans-serif"],
+        jp: ["Noto Sans JP", "sans-serif"],
+      },
+      animation: {
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "float": "float 6s ease-in-out infinite",
+        "glow": "glow 2s ease-in-out infinite alternate",
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
         },
-      }
-    </script>
+        glow: {
+          "0%": { boxShadow: "0 0 5px rgba(34, 211, 238, 0.2)" },
+          "100%": { boxShadow: "0 0 20px rgba(34, 211, 238, 0.4)" },
+        },
+      },
+    },
+  },
+};
+</script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .text-stroke {
-            -webkit-text-stroke: 1px currentColor;
-            color: transparent;
-        }
-    </style>
-<!-- SEO & AI-Friendly Optimization (JSON-LD) -->
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Kazuki Kamihoriuchi",
-      "jobTitle": "New Business Development & Technical Leader",
-      "url": "https://kazukikamihoriuchi.com",
-      "sameAs": [
-        "https://linkedin.com/in/kazukikamihoriuchi",
-        "https://github.com/kazukikamihoriuchi"
-      ],
-      "knowsAbout": ["Venture Design", "Product-Market Fit", "Cloud Architecture", "Go", "Microservices", "Scalable Systems"],
-      "hasOccupation": [
-        {
-          "@type": "Occupation",
-          "name": "Technical Lead",
-          "occupationLocation": "Rakuten Group Innovation Hub"
-        }
-      ]
-    }
-    </script>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #020617; color: #e2e8f0; font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #22d3ee 0%, #34d399 50%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+  }
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  .card-hover:hover {
+    border-color: rgba(34, 211, 238, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(34, 211, 238, 0.08);
+  }
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #22d3ee, transparent);
+    opacity: 0.3;
+  }
+  .terminal-cursor::after {
+    content: "▊";
+    color: #22d3ee;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(51, 65, 85, 0.5);
+    color: #94a3b8;
+  }
+  .badge.active {
+    border-color: rgba(34, 211, 238, 0.3);
+    color: #22d3ee;
+    background: rgba(34, 211, 238, 0.05);
+  }
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #22d3ee;
+    margin-bottom: 12px;
+  }
+  .stat-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    background: linear-gradient(135deg, #22d3ee 0%, #34d399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
 </head>
-<body class="bg-background text-on-background font-body antialiased">
-<!-- TopNavBar (Shared Component) -->
-<header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-xl">
-<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-black tracking-tighter text-slate-900 uppercase font-headline">
-                ARCHITECT
-            </div>
-<ul class="hidden md:flex gap-10 items-center">
-<li><a class="font-headline uppercase tracking-widest text-sm font-bold text-blue-700 border-b-2 border-blue-700 pb-1" href="#about">About</a></li>
-<li><a class="font-headline uppercase tracking-widest text-sm font-bold text-slate-600 hover:text-slate-900 transition-colors" href="#experience">Experience</a></li>
-<li><a class="font-headline uppercase tracking-widest text-sm font-bold text-slate-600 hover:text-slate-900 transition-colors" href="#skills">Skills</a></li>
-<li><a class="font-headline uppercase tracking-widest text-sm font-bold text-slate-600 hover:text-slate-900 transition-colors" href="#projects">Projects</a></li>
-<li><a class="font-headline uppercase tracking-widest text-sm font-bold text-slate-600 hover:text-slate-900 transition-colors" href="#contact">Contact</a></li>
-</ul>
-<a class="bg-secondary text-on-secondary px-6 py-2 rounded-xl font-headline font-bold uppercase tracking-widest text-xs hover:opacity-80 transition-all active:scale-95" href="#contact">
-                Let's Talk
-            </a>
-</nav>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<header class="fixed top-0 left-0 right-0 z-50 glass">
+  <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="font-display text-sm font-bold tracking-[0.3em] text-accent">TSUNAGU</a>
+    <div class="hidden md:flex items-center gap-10">
+      <a href="#about" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist hover:text-accent transition-colors">About</a>
+      <a href="#philosophy" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist hover:text-accent transition-colors">Philosophy</a>
+      <a href="#ventures" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist hover:text-accent transition-colors">Ventures</a>
+      <a href="#stack" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist hover:text-accent transition-colors">Stack</a>
+      <a href="#contact" class="font-display text-[10px] tracking-[0.15em] uppercase text-accent border border-accent/30 px-5 py-2 rounded hover:bg-accent/5 transition-all">Contact</a>
+    </div>
+  </nav>
 </header>
+
 <main>
-<!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center px-8 pt-20 pb-32 overflow-hidden bg-primary-container text-white" id="about">
-<div class="absolute inset-0 z-0 opacity-20">
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#2e64fe_0%,_transparent_50%)]"></div>
-<!-- Architectural Grid Background -->
-<div class="h-full w-full bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-</div>
-<div class="relative z-10 max-w-screen-2xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-8">
-<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
-                        TRANSFORMING <br/>
-<span class="text-secondary-container">VISION</span> INTO <br/>
-                        SCALABLE VENTURES
-                    </h1>
-<p class="max-w-2xl text-xl md:text-2xl text-on-primary-container font-light leading-relaxed mb-10">
-                        Bridging the gap between high-level strategy and deep-tech engineering to build the next generation of industry-defining platforms.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<a class="bg-secondary text-white px-8 py-4 rounded-xl font-headline font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:shadow-[0_0_30px_rgba(0,73,222,0.4)] transition-all" href="#contact">
-                            Let's Build Together
-                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-<a class="border border-white/20 bg-white/5 backdrop-blur-md px-8 py-4 rounded-xl font-headline font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition-all" href="#projects">
-                            View Roadmap
-                        </a>
-</div>
-</div>
-<div class="lg:col-span-4 hidden lg:block">
-<div class="aspect-[3/4] rounded-2xl overflow-hidden relative group">
-<img alt="Professional portrait of Kazuki Kamihoriuchi" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 object-top" data-alt="Professional portrait of Kazuki Kamihoriuchi, New Business Development &amp; Technical Leader, against a clean background." src="https://lh3.googleusercontent.com/aida/ADBb0uj3ZGl0VL5xo0ImzM2ebefesCFDgLySmb4s5PTWQo8FvM8Zy3wSnAoVHepx-nNiF7Ce19psKYgcY7K45fKkZmZzIY6LrbpxgAWmS_59gqr54gL4KCWfyQjf0tCsztVrx9x5WFPHkPQEATocFKnCbkEO83H9d4vqBaWwotnLX6clSs12TVOqkj9I9VOIejmw3Sa4QE2fQShYGMOxcpCJ0vvmTC2MtP-COcj-iuzzH3_2E4AYs5jKDxfhHCoZZ76xk0b0aflPvLgXGQ"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
-</div>
-</div>
-</div>
+<!-- ==================== HERO ==================== -->
+<section class="min-h-screen flex items-center relative overflow-hidden pt-16" id="about">
+  <div class="absolute inset-0 grid-bg opacity-40"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-midnight"></div>
+  <div class="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] animate-pulse-slow"></div>
+  <div class="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-emerald/5 rounded-full blur-[100px] animate-pulse-slow"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-4xl">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="font-display text-[10px] tracking-[0.3em] uppercase text-accent">— 01 // IDENTITY</span>
+        <div class="w-12 h-px bg-accent/30"></div>
+      </div>
+
+      <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] mb-6">
+        <span class="text-ice">上堀内</span><br>
+        <span class="gradient-text">一輝</span>
+      </h1>
+
+      <div class="font-jp text-2xl md:text-3xl font-light text-mist mb-4 tracking-wide">
+        通信会社から構造変化を起こす、一人新規事業ユニット
+      </div>
+
+      <div class="font-display text-sm md:text-base text-mist/60 mb-12 tracking-wide">
+        <span class="text-accent">$</span> cat /dev/new_business | grep --signal transformation
+      </div>
+
+      <div class="flex flex-wrap gap-3 mb-16">
+        <span class="badge active">Solana Validator</span>
+        <span class="badge">SCS Security</span>
+        <span class="badge">Web3 Infra</span>
+        <span class="badge">Digital Asset</span>
+        <span class="badge">Fukuoka</span>
+        <span class="badge">TSUNAGU</span>
+      </div>
+
+      <div class="flex flex-wrap gap-6 items-center">
+        <a href="#ventures" class="group inline-flex items-center gap-3 bg-accent/10 border border-accent/30 px-8 py-4 rounded hover:bg-accent/20 transition-all">
+          <span class="font-display text-xs font-bold tracking-[0.15em] uppercase text-accent">View Ventures</span>
+          <span class="text-accent group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        <a href="#philosophy" class="font-display text-xs tracking-[0.15em] uppercase text-mist/60 hover:text-mist transition-colors border-b border-mist/20 pb-1">
+          How I Think ↓
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Strategy & Impact Section (Metrics) -->
-<section class="py-24 px-8 bg-surface">
-<div class="max-w-screen-2xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
-<div class="p-12 bg-surface-container-low flex flex-col justify-between aspect-square">
-<span class="font-headline text-6xl font-black text-secondary">3X</span>
-<div>
-<h3 class="font-headline text-2xl font-bold mb-2 uppercase">Faster Time-to-Market</h3>
-<p class="text-on-surface-variant leading-relaxed">Through lean validation loops and automated CI/CD infrastructures.</p>
-</div>
-</div>
-<div class="p-12 bg-surface-container-high flex flex-col justify-between aspect-square">
-<span class="font-headline text-6xl font-black text-secondary">5+</span>
-<div>
-<h3 class="font-headline text-2xl font-bold mb-2 uppercase">New Business Units</h3>
-<p class="text-on-surface-variant leading-relaxed">Launched from zero to revenue-generating within corporate innovation hubs.</p>
-</div>
-</div>
-<div class="p-12 bg-surface-container-highest flex flex-col justify-between aspect-square">
-<span class="font-headline text-6xl font-black text-secondary">40%</span>
-<div>
-<h3 class="font-headline text-2xl font-bold mb-2 uppercase">Agility Improvement</h3>
-<p class="text-on-surface-variant leading-relaxed">Optimization of cross-functional team workflows and technical governance.</p>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ==================== TERMINAL INTRO ==================== -->
+<section class="py-24 px-6 relative">
+  <div class="max-w-5xl mx-auto">
+    <div class="glass rounded-xl p-8 md:p-12 font-display text-sm leading-relaxed">
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+        <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+        <div class="w-3 h-3 rounded-full bg-emerald-500/50"></div>
+        <span class="text-mist/40 text-xs ml-2">about.sh — 80x24</span>
+      </div>
+      <div class="space-y-3 text-mist">
+        <p><span class="text-accent">$</span> <span class="text-ice">whoami</span></p>
+        <p class="pl-4">上堀内 一輝 / Kazuki Kamihoriuchi</p>
+        <p class="pl-4">Role: <span class="text-emerald">New Business Architect</span> @ 通信会社</p>
+        <p class="pl-4">Base: <span class="text-emerald">Fukuoka, Japan</span></p>
+        <p>&nbsp;</p>
+        <p><span class="text-accent">$</span> <span class="text-ice">cat mission.txt</span></p>
+        <p class="pl-4 text-ice">"大企業の内部から、構造変化を起こす。"</p>
+        <p class="pl-4">一人で新規事業の評価・設計・実行・再評価を</p>
+        <p class="pl-4">一気通貫で回す。パートナーと組んで加速する。</p>
+        <p>&nbsp;</p>
+        <p><span class="text-accent">$</span> <span class="text-ice">ls -la /projects/</span></p>
+        <p class="pl-4"><span class="text-violet">drwxr-xr-x</span>  <span class="text-accent">solana-validator</span>    — PoS validator infrastructure</p>
+        <p class="pl-4"><span class="text-violet">drwxr-xr-x</span>  <span class="text-accent">scs</span>                  — Security Consulting Services</p>
+        <p class="pl-4"><span class="text-violet">drwxr-xr-x</span>  <span class="text-accent">digital-asset-infra</span>  — Cross-chain quote comparison</p>
+        <p class="pl-4"><span class="text-violet">drwxr-xr-x</span>  <span class="text-accent">delivery-nft</span>         — Soulbound gratitude platform</p>
+        <p class="pl-4"><span class="text-violet">drwxr-xr-x</span>  <span class="text-accent">disaster-prevention</span> — B2B SaaS防災</p>
+        <p>&nbsp;</p>
+        <p><span class="text-accent">$</span> <span class="text-ice">_</span><span class="terminal-cursor"></span></p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Core Expertise (Categorized Skills) -->
-<section class="py-32 px-8 bg-surface-container-low" id="skills">
-<div class="max-w-screen-2xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div class="max-w-2xl">
-<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-6">ARCHITECTURAL <br/>CORE COMPETENCIES</h2>
-</div>
-<div class="flex gap-2 mb-2">
-<div class="w-12 h-1 bg-secondary"></div>
-<div class="w-24 h-1 bg-secondary-container"></div>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-<!-- Venture Design -->
-<div class="space-y-8">
-<div class="border-l-4 border-secondary pl-8 py-2">
-<h3 class="font-headline text-2xl font-bold mb-4 uppercase tracking-widest">Venture Design &amp; Strategy</h3>
-<p class="text-on-surface-variant mb-6 leading-relaxed">Synthesizing market signals into viable business models. Specialist in PMF metrics and unit economics validation.</p>
-<div class="flex flex-wrap gap-3">
-<span class="px-4 py-2 bg-surface-container-highest text-xs font-bold uppercase tracking-widest">Market Analysis</span>
-<span class="px-4 py-2 bg-surface-container-highest text-xs font-bold uppercase tracking-widest">Go-To-Market</span>
-<span class="px-4 py-2 bg-surface-container-highest text-xs font-bold uppercase tracking-widest">Financial Modeling</span>
-</div>
-</div>
-<div class="border-l-4 border-secondary pl-8 py-2">
-<h3 class="font-headline text-2xl font-bold mb-4 uppercase tracking-widest">Technical Leadership</h3>
-<p class="text-on-surface-variant mb-6 leading-relaxed">Building high-performance lean teams. Expertise in microservices architecture and technical debt management.</p>
-<div class="flex flex-wrap gap-3">
-<span class="px-4 py-2 bg-surface-container-highest text-xs font-bold uppercase tracking-widest">Cloud Agility</span>
-<span class="px-4 py-2 bg-surface-container-highest text-xs font-bold uppercase tracking-widest">Team Scaling</span>
-<span class="px-4 py-2 bg-surface-container-highest text-xs font-bold uppercase tracking-widest">Mentorship</span>
-</div>
-</div>
-</div>
-<!-- Technical Progress Indicators -->
-<div class="space-y-12 bg-white p-12 rounded-2xl shadow-sm">
-<h4 class="font-headline text-lg font-bold uppercase tracking-widest text-on-surface-variant">Proficiency Index</h4>
-<div class="space-y-6">
-<div>
-<div class="flex justify-between mb-3 items-end">
-<span class="font-headline font-bold text-sm uppercase">Cloud Systems Architecture</span>
-<span class="font-label text-xs font-medium">95%</span>
-</div>
-<div class="flex gap-1 h-3">
-<div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-surface-container-highest"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-3 items-end">
-<span class="font-headline font-bold text-sm uppercase">Full-Stack Scalability (Go/Next.js)</span>
-<span class="font-label text-xs font-medium">90%</span>
-</div>
-<div class="flex gap-1 h-3">
-<div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-surface-container-highest"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-3 items-end">
-<span class="font-headline font-bold text-sm uppercase">Product Discovery &amp; Lean UX</span>
-<span class="font-label text-xs font-medium">85%</span>
-</div>
-<div class="flex gap-1 h-3">
-<div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-tertiary-fixed-dim"></div><div class="flex-1 bg-surface-container-highest"></div><div class="flex-1 bg-surface-container-highest"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ==================== PHILOSOPHY ==================== -->
+<section class="py-32 px-6 relative" id="philosophy">
+  <div class="absolute inset-0 bg-gradient-to-b from-deep via-midnight to-deep"></div>
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="flex items-center gap-3 mb-16">
+      <span class="font-display text-[10px] tracking-[0.3em] uppercase text-accent">— 02 // FRAMEWORK</span>
+      <div class="w-12 h-px bg-accent/30"></div>
+    </div>
+
+    <h2 class="font-heading text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-20">
+      <span class="text-ice">THINKING</span><br>
+      <span class="gradient-text">FRAMEWORK</span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="font-display text-3xl text-accent">01</span>
+          <div class="h-px flex-1 bg-gradient-to-r from-accent/30 to-transparent"></div>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-ice mb-4">ペインがないとビジネスはコケる</h3>
+        <p class="text-mist leading-relaxed font-jp text-sm">
+          真のニーズは「あったらいいな」ではなく「解決しないと困る」の中にある。
+          行動変容コストの壁を乗り越えるペインの深さこそが、
+          ビジネスの起点。表面的な「技術進化」論ではなく、
+          構造的変化を設計する。
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="font-display text-3xl text-accent">02</span>
+          <div class="h-px flex-1 bg-gradient-to-r from-accent/30 to-transparent"></div>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-ice mb-4">リアル1回 ＞ 仮想100回</h3>
+        <p class="text-mist leading-relaxed font-jp text-sm">
+          机上の分析より、1回の面談。1回の現場。
+          仮説はドキュメントで検証するのではなく、
+          相手との対話の中で叩きつけて反応を見る。
+          「やった気になる」ことを徹底的に排除する。
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="font-display text-3xl text-accent">03</span>
+          <div class="h-px flex-1 bg-gradient-to-r from-accent/30 to-transparent"></div>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-ice mb-4">一気通貫 — 評価→実行→再評価</h3>
+        <p class="text-mist leading-relaxed font-jp text-sm">
+          YC→Alchemist→a16z由来の評価フレームワークで
+          仮説を検証。Go/No-Go/Archiveの判断で
+          リソースを最適配分する。浅い接続で終わらせず、
+          一気通貫で価値まで届ける。
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="font-display text-3xl text-accent">04</span>
+          <div class="h-px flex-1 bg-gradient-to-r from-accent/30 to-transparent"></div>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-ice mb-4">Brain First / Design First</h3>
+        <p class="text-mist leading-relaxed font-jp text-sm">
+          GBrainで知識を蓄積し、設計書→アーキテクチャ図→
+          論理矛盾チェック→実装の順を厳守。
+          「コードを書く前に設計する」を鉄則とする。
+          形式検証（Alloy）で状態機械の矛盾を証明してから
+          実装に入る。
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Venture Journey (Timeline) -->
-<section class="py-32 px-8 bg-surface" id="experience">
-<div class="max-w-screen-2xl mx-auto">
-<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-24">VENTURE JOURNEY</h2>
-<div class="space-y-0 relative">
-<!-- Rakuten -->
-<article class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-20 border-b border-outline-variant/30">
-<div class="md:col-span-3">
-<span class="font-headline font-bold text-xl text-secondary">2021 — PRESENT</span>
-</div>
-<div class="md:col-span-9">
-<h3 class="font-headline text-3xl font-bold mb-2">RAKUTEN GROUP</h3>
-<h4 class="font-headline text-lg text-on-surface-variant font-medium mb-6 uppercase tracking-widest">Technical Lead | Innovation Hub</h4>
-<p class="text-on-surface-variant max-w-3xl leading-relaxed text-lg">
-                                Orchestrating the technical foundation for new business initiatives. Leading cross-functional teams of engineers and product designers to build high-stakes prototypes and production-ready platforms for global markets.
-                            </p>
-</div>
-</article>
-<!-- E-commerce Lab -->
-<article class="grid grid-cols-1 md:grid-cols-12 gap-8 py-20 border-b border-outline-variant/30">
-<div class="md:col-span-3">
-<span class="font-headline font-bold text-xl text-secondary">2018 — 2021</span>
-</div>
-<div class="md:col-span-9">
-<h3 class="font-headline text-3xl font-bold mb-2">E-COMMERCE INNOVATION LAB</h3>
-<h4 class="font-headline text-lg text-on-surface-variant font-medium mb-6 uppercase tracking-widest">Full-Stack Engineer &amp; Product Manager</h4>
-<p class="text-on-surface-variant max-w-3xl leading-relaxed text-lg">
-                                Pioneered early-stage product development for niche retail sectors. Successfully transitioned 3 internal tools into external SaaS offerings by identifying unserved market segments and optimizing the technical architecture for multi-tenancy.
-                            </p>
-</div>
-</article>
-<!-- Early Career -->
-<article class="grid grid-cols-1 md:grid-cols-12 gap-8 py-20">
-<div class="md:col-span-3">
-<span class="font-headline font-bold text-xl text-secondary">2015 — 2018</span>
-</div>
-<div class="md:col-span-9">
-<h3 class="font-headline text-3xl font-bold mb-2">DIGITAL TRANSFORMATION CONSULTANCY</h3>
-<h4 class="font-headline text-lg text-on-surface-variant font-medium mb-6 uppercase tracking-widest">Software Engineer</h4>
-<p class="text-on-surface-variant max-w-3xl leading-relaxed text-lg">
-                                Modernizing legacy infrastructures for enterprise clients. Focused on decoupling monolithic architectures into scalable microservices using Go and Docker.
-                            </p>
-</div>
-</article>
-</div>
-</div>
+
+<!-- ==================== METRICS ==================== -->
+<section class="py-24 px-6 relative">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate/50">
+      <div class="bg-deep p-10 flex flex-col justify-center items-center text-center">
+        <span class="stat-number text-5xl font-display mb-3">1</span>
+        <span class="font-display text-[10px] tracking-[0.2em] uppercase text-mist/60">Solo Operator</span>
+        <span class="font-jp text-xs text-mist/40 mt-2">一人で新規事業ユニット</span>
+      </div>
+      <div class="bg-deep p-10 flex flex-col justify-center items-center text-center">
+        <span class="stat-number text-5xl font-display mb-3">5+</span>
+        <span class="font-display text-[10px] tracking-[0.2em] uppercase text-mist/60">Active Projects</span>
+        <span class="font-jp text-xs text-mist/40 mt-2">同時進行の事業構想</span>
+      </div>
+      <div class="bg-deep p-10 flex flex-col justify-center items-center text-center">
+        <span class="stat-number text-5xl font-display mb-3">2</span>
+        <span class="font-display text-[10px] tracking-[0.2em] uppercase text-mist/60">Phase Gates</span>
+        <span class="font-jp text-xs text-mist/40 mt-2">初期トラクション→外部エンジン</span>
+      </div>
+      <div class="bg-deep p-10 flex flex-col justify-center items-center text-center">
+        <span class="stat-number text-5xl font-display mb-3">九州</span>
+        <span class="font-display text-[10px] tracking-[0.2em] uppercase text-mist/60">Home Base</span>
+        <span class="font-jp text-xs text-mist/40 mt-2">福岡・地場密着型</span>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Strategic Projects -->
-<section class="py-32 px-8 bg-surface-container-low" id="projects">
-<div class="max-w-screen-2xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20">
-<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight">STRATEGIC <br/>DEPLOYMENTS</h2>
-<p class="font-headline uppercase tracking-widest text-sm text-secondary font-bold mb-4">Case Studies</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<!-- Project 1 -->
-<div class="group cursor-pointer">
-<div class="aspect-video mb-8 overflow-hidden rounded-xl bg-surface-container-highest">
-<img alt="Enterprise SaaS Incubation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract visualization of a complex network of data nodes and connecting lines, representing scalable enterprise software architecture in cool blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoYNtiHG7WMi5hNw8PLpnREhIybQsZl5y8KPXq9cxO2s3Qp_s15BPMw1cjtoVGk-HbTm2VhmX2aCJv4QYj-b8RrgIM5bEubLsbZ7R0EGEXqiGw9EzW_OoU1jELmRfhpXuuvtziEgYN7U1olf480WvNW3IdFZtEyEKy2ANQ2qMxu8RC9ys3mad_zOkeo5XXIRNK1iJbGQf7IIW28cuwoUm-Jhe0BAO8eo7AqOsBCEYbCVr_mnVmOAmwLNp-zWalbNX-w6WQRoDs_Cw"/>
-</div>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="font-label text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-white border border-outline-variant">Go</span>
-<span class="font-label text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-white border border-outline-variant">gRPC</span>
-<span class="font-label text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-white border border-outline-variant">Microservices</span>
-</div>
-<h3 class="font-headline text-3xl font-bold mb-4 group-hover:text-secondary transition-colors">Enterprise SaaS Incubation</h3>
-<p class="text-on-surface-variant leading-relaxed mb-6">
-                            Developing a modular ERP framework for global logistics, reducing operational overhead by 25% through automated resource allocation algorithms.
-                        </p>
-</div>
-<!-- Project 2 -->
-<div class="group cursor-pointer">
-<div class="aspect-video mb-8 overflow-hidden rounded-xl bg-surface-container-highest">
-<img alt="Next-Gen Payment Venture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist top-down view of high-end electronic components on a motherboard, representing precision engineering and financial technology security." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2R9t2yJTJrbSW4-j4uROFgTpTe4dSqtVxuHm7xco_rd0XBObq2cKt5dYuj_B2AraC2YjxPETiY2kTNLkqHEnhkuSIXqRPk1sik-vFA3Aipzk0o6iPktfll8cSjBK1TrdvVpupamhfmj8y-czbLBdnKYFuEPbJLaXLVDCk6YnjHBTt_lmQiKdWOfutvUT0QLVFfHop-9uAR5ByykY8rOnQNbY0jrbDo-Mb83gBZDlzCJ0aUdMKs-lgDE4C8gAthYS3wJuiGqCHL5k"/>
-</div>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="font-label text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-white border border-outline-variant">PostgreSQL</span>
-<span class="font-label text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-white border border-outline-variant">AWS</span>
-<span class="font-label text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-white border border-outline-variant">React</span>
-</div>
-<h3 class="font-headline text-3xl font-bold mb-4 group-hover:text-secondary transition-colors">Next-Gen Payment Venture</h3>
-<p class="text-on-surface-variant leading-relaxed mb-6">
-                            Building a compliant, high-throughput payment gateway for cross-border transactions, achieving sub-100ms latency across major Asian corridors.
-                        </p>
-</div>
-</div>
-</div>
+
+<!-- ==================== VENTURES ==================== -->
+<section class="py-32 px-6 relative" id="ventures">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-3 mb-16">
+      <span class="font-display text-[10px] tracking-[0.3em] uppercase text-accent">— 03 // PORTFOLIO</span>
+      <div class="w-12 h-px bg-accent/30"></div>
+    </div>
+
+    <h2 class="font-heading text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-4">
+      <span class="text-ice">ACTIVE</span><br>
+      <span class="gradient-text">VENTURES</span>
+    </h2>
+    <p class="text-mist/60 font-display text-xs tracking-[0.1em] mb-20 max-w-xl">
+      Each venture follows the same arc: hypothesis → validation → build → scale.
+    </p>
+
+    <div class="space-y-6">
+      <!-- Venture 1: Solana Validator -->
+      <div class="glass rounded-xl p-8 md:p-10 card-hover group">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-2 h-2 rounded-full bg-accent"></span>
+              <span class="font-display text-[10px] tracking-[0.15em] text-accent uppercase">Phase 2 — Scale</span>
+            </div>
+            <h3 class="font-heading text-2xl md:text-3xl font-bold text-ice mb-4">Solana Validator Infrastructure</h3>
+            <p class="text-mist leading-relaxed mb-6 font-jp text-sm">
+              通信会社の自社DC（福岡）と固定IP・豊富な帯域を活かし、
+              Solanaバリデータを運用。Next Finance Techをパートナー兼
+              アドバイザーに迎え、testnet→mainnetの2段階デプロイを計画。
+              暗号資産の地産地消モデル。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge active">Solana</span>
+              <span class="badge">PoS</span>
+              <span class="badge">Data Center</span>
+              <span class="badge">Fukuoka</span>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center">
+            <span class="font-display text-7xl font-black text-accent/5 group-hover:text-accent/10 transition-all duration-500">01</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venture 2: SCS -->
+      <div class="glass rounded-xl p-8 md:p-10 card-hover group">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-2 h-2 rounded-full bg-emerald"></span>
+              <span class="font-display text-[10px] tracking-[0.15em] text-emerald uppercase">Phase 1 — Validation</span>
+            </div>
+            <h3 class="font-heading text-2xl md:text-3xl font-bold text-ice mb-4">SCS — Security Consulting Services</h3>
+            <p class="text-mist leading-relaxed mb-6 font-jp text-sm">
+              九州密着・F2F・実行支援を軸としたセキュリティ評価サービス。
+              セキュリティ室のない中小製造業をターゲットに、
+              トップダウン営業戦略（川上の圧力がなければ動かない構造）。
+              TISAX二段階課金モデルを応用したビジネス設計。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge active">SCS</span>
+              <span class="badge">Security</span>
+              <span class="badge">Manufacturing</span>
+              <span class="badge">Kyushu</span>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center">
+            <span class="font-display text-7xl font-black text-accent/5 group-hover:text-accent/10 transition-all duration-500">02</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venture 3: Digital Asset Infra -->
+      <div class="glass rounded-xl p-8 md:p-10 card-hover group">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-2 h-2 rounded-full bg-violet"></span>
+              <span class="font-display text-[10px] tracking-[0.15em] text-violet uppercase">Phase 1 — Discovery</span>
+            </div>
+            <h3 class="font-heading text-2xl md:text-3xl font-bold text-ice mb-4">Digital Asset Infrastructure</h3>
+            <p class="text-mist leading-relaxed mb-6 font-jp text-sm">
+              クロスチェーン送金のQUOTE比較プラットフォーム事業。
+              SECのSAB121撤廃・ステーブルコイン法制化による
+              機関投資家の暗号資産参入の流れを受け、
+              2026年5月をターゲットに事業設計中。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge">Digital Asset</span>
+              <span class="badge">Cross-chain</span>
+              <span class="badge">Quote</span>
+              <span class="badge">2026</span>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center">
+            <span class="font-display text-7xl font-black text-accent/5 group-hover:text-accent/10 transition-all duration-500">03</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venture 4: DeliveryNFT -->
+      <div class="glass rounded-xl p-8 md:p-10 card-hover group">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-2 h-2 rounded-full bg-accent"></span>
+              <span class="font-display text-[10px] tracking-[0.15em] text-accent uppercase">Phase 1 — Building</span>
+            </div>
+            <h3 class="font-heading text-2xl md:text-3xl font-bold text-ice mb-4">DeliveryNFT — Soulbound Gratitude</h3>
+            <p class="text-mist leading-relaxed mb-6 font-jp text-sm">
+              従業員の感謝をSoulbound ERC-1155でトークン化する
+              実証実験。Polygon Mainnetで動作、換金不可・譲渡不可。
+              MintMonster（月額5万円）からの脱却として自社開発。
+              「もらった瞬間の気持ち」を純粋に残す。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge">ERC-1155</span>
+              <span class="badge">Polygon</span>
+              <span class="badge">Soulbound</span>
+              <span class="badge">Solidity</span>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center">
+            <span class="font-display text-7xl font-black text-accent/5 group-hover:text-accent/10 transition-all duration-500">04</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Call to Action -->
-<section class="py-40 px-8 bg-primary-container text-white text-center relative overflow-hidden" id="contact">
-<div class="absolute inset-0 z-0 opacity-10">
-<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-headline text-[30vw] font-black tracking-tighter text-stroke leading-none uppercase">BUILD</span>
-</div>
-<div class="relative z-10 max-w-4xl mx-auto">
-<h2 class="font-headline text-4xl md:text-7xl font-bold mb-8 uppercase tracking-tighter">BUILD THE NEXT <br/>BIG VENTURE?</h2>
-<p class="text-on-primary-container text-xl md:text-2xl mb-12 font-light">
-                    I am currently exploring opportunities to lead high-impact technical initiatives or seed-stage business developments.
-                </p>
-<div class="flex flex-col md:flex-row justify-center items-center gap-6">
-<a class="bg-secondary text-white px-12 py-5 rounded-xl font-headline font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform" href="mailto:hello@kazukikamihoriuchi.com">
-                        Initiate Discussion
-                    </a>
-<a class="font-headline font-bold uppercase tracking-widest text-sm border-b-2 border-white/20 pb-2 hover:border-white transition-all" href="#">
-                        Download Portfolio PDF
-                    </a>
-</div>
-</div>
+
+<!-- ==================== STACK ==================== -->
+<section class="py-32 px-6 relative" id="stack">
+  <div class="absolute inset-0 bg-gradient-to-b from-deep via-midnight to-deep"></div>
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="flex items-center gap-3 mb-16">
+      <span class="font-display text-[10px] tracking-[0.3em] uppercase text-accent">— 04 // STACK</span>
+      <div class="w-12 h-px bg-accent/30"></div>
+    </div>
+
+    <h2 class="font-heading text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-20">
+      <span class="text-ice">TOOLCHAIN &amp;</span><br>
+      <span class="gradient-text">STACK</span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="font-display text-lg">🧠</span>
+          <span class="font-display text-xs tracking-[0.15em] uppercase text-accent">Knowledge</span>
+        </div>
+        <h4 class="text-sm font-bold text-ice mb-4 font-display">GBrain + Hermes Agent</h4>
+        <p class="text-mist text-xs leading-relaxed font-jp">
+          Garry Tan設計のパーソナルナレッジブレイン。
+          PGLite + Vector Search + Knowledge Graph。
+          全プロジェクトの知見を一元管理し、
+          設計→形式検証→実装の一貫ワークフローを駆動。
+        </p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="badge">PGLite</span>
+          <span class="badge">Vector Search</span>
+          <span class="badge">Knowledge Graph</span>
+        </div>
+      </div>
+
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="font-display text-lg">🔗</span>
+          <span class="font-display text-xs tracking-[0.15em] uppercase text-accent">Blockchain</span>
+        </div>
+        <h4 class="text-sm font-bold text-ice mb-4 font-display">Solana / Ethereum</h4>
+        <p class="text-mist text-xs leading-relaxed font-jp">
+          Solanaバリデータ運用（testnet→mainnet）。
+          ERC-1155 Soulboundトークン（Solidity + Hardhat）。
+          Alloy形式検証でコントラクトの論理矛盾を事前証明。
+        </p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="badge">Solana</span>
+          <span class="badge">Solidity</span>
+          <span class="badge">Hardhat</span>
+          <span class="badge">Alloy</span>
+        </div>
+      </div>
+
+      <div class="glass rounded-xl p-8 card-hover">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="font-display text-lg">🤖</span>
+          <span class="font-display text-xs tracking-[0.15em] uppercase text-accent">AI Stack</span>
+        </div>
+        <h4 class="text-sm font-bold text-ice mb-4 font-display">Hermes Agent + OpenHands</h4>
+        <p class="text-mist text-xs leading-relaxed font-jp">
+          Hermes Agentで全AIワークフローを統括。
+          OpenHands / Claude Code / Codexでコード生成を委譲。
+          AIエージェントをオーケストレーションする設計志向。
+        </p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="badge">Hermes</span>
+          <span class="badge">OpenHands</span>
+          <span class="badge">LiteLLM</span>
+          <span class="badge">OpenHome</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- ==================== CTA ==================== -->
+<section class="py-40 px-6 relative overflow-hidden" id="contact">
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(34,211,238,0.05)_0%,transparent_60%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(52,211,153,0.05)_0%,transparent_60%)]"></div>
+  </div>
+
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+    <div class="flex items-center justify-center gap-3 mb-12">
+      <span class="font-display text-[10px] tracking-[0.3em] uppercase text-accent">— 05 // CONNECT</span>
+      <div class="w-12 h-px bg-accent/30"></div>
+    </div>
+
+    <h2 class="font-heading text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] mb-8">
+      <span class="text-ice">LET'S BUILD</span><br>
+      <span class="gradient-text">SOMETHING</span><br>
+      <span class="text-ice">STRUCTURAL</span>
+    </h2>
+
+    <p class="text-mist/70 text-sm md:text-base font-jp max-w-2xl mx-auto mb-16 leading-relaxed">
+      新規事業の評価から実行まで、一気通貫で。
+      パートナーシップ・協業・事業構想の相談はこちらから。
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="mailto:kazuki@example.com" class="group inline-flex items-center gap-3 bg-accent/10 border border-accent/30 px-10 py-5 rounded-xl hover:bg-accent/20 transition-all">
+        <span class="font-display text-xs font-bold tracking-[0.15em] uppercase text-accent">Initiate Discussion</span>
+        <span class="text-accent group-hover:translate-x-1 transition-transform">→</span>
+      </a>
+      <a href="https://github.com/moatinside" class="font-display text-xs tracking-[0.15em] uppercase text-mist/50 hover:text-mist transition-colors border-b border-mist/20 pb-1">
+        GitHub: @moatinside
+      </a>
+    </div>
+  </div>
+</section>
+
 </main>
-<!-- Footer (Shared Component) -->
-<footer class="bg-slate-50 py-20 px-8">
-<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-screen-2xl mx-auto gap-8">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="text-lg font-bold text-slate-900 font-headline">ARCHITECTURAL MONOLITH</span>
-<p class="font-['Inter'] text-xs tracking-tight font-medium uppercase text-slate-500">© 2024 ARCHITECTURAL MONOLITH. ALL RIGHTS RESERVED.</p>
-</div>
-<div class="flex gap-8">
-<a class="font-['Inter'] text-xs tracking-tight font-medium uppercase text-slate-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-all" href="#">LinkedIn</a>
-<a class="font-['Inter'] text-xs tracking-tight font-medium uppercase text-slate-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-all" href="#">GitHub</a>
-<a class="font-['Inter'] text-xs tracking-tight font-medium uppercase text-slate-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-all" href="#">Twitter</a>
-<a class="font-['Inter'] text-xs tracking-tight font-medium uppercase text-slate-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-all" href="#">Email</a>
-</div>
-</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="border-t border-slate/50 py-12 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="flex items-center gap-4">
+      <span class="font-display text-xs font-bold tracking-[0.3em] text-accent">TSUNAGU</span>
+      <span class="text-mist/30 text-[10px]">© 2026</span>
+    </div>
+    <div class="flex gap-8">
+      <a href="#" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist/40 hover:text-accent transition-colors">LinkedIn</a>
+      <a href="https://github.com/moatinside" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist/40 hover:text-accent transition-colors">GitHub</a>
+      <a href="#" class="font-display text-[10px] tracking-[0.15em] uppercase text-mist/40 hover:text-accent transition-colors">X</a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-8">
+    <div class="glow-line"></div>
+    <p class="text-center text-mist/20 text-[10px] mt-6 font-display tracking-[0.15em]">
+      BUILT WITH HERMES AGENT + OPENHANDS
+    </p>
+  </div>
 </footer>
-</body></html>
+
+</body>
+</html>
